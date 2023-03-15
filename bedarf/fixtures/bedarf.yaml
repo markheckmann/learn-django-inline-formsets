@@ -1,0 +1,25 @@
+- model: bedarf.bedarf
+  pk: 1
+  fields:
+    name: I.SPM
+- model: bedarf.bedarf
+  pk: 2
+  fields:
+    name: Zentrale
+
+
+- model: bedarf.bedarfvzp
+  fields:
+    bedarf: 1
+    jahr: 2023
+    vzp: 2.3
+- model: bedarf.bedarfvzp
+  fields:
+    bedarf: 1
+    jahr: 2024
+    vzp: 2.5
+- model: bedarf.bedarfvzp
+  fields:
+    bedarf: 1
+    jahr: 2025
+    vzp: 2.7

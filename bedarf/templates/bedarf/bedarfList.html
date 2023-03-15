@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Bedarf</h2>
+    <a class ="btn btn-outline-primary" href="{% url 'bedarf_create' %}">Hinzufügen</a>
+    <hr>
+    <ul>
+        {% for obj in object_list %}
+            <li>{{ obj.name }}</li>
+            <small><a href="{% url 'bedarf_delete' pk=obj.id %}">Löschen</a></small>
+            <hr>
+        {% endfor %}
+    </ul>
+{% endblock %}

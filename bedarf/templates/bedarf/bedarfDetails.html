@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Bedarf Details</h2>
+    <form method = "POST" action=""> {% csrf_token %}
+        {{ form.as_p }}
+        <hr>
+        {{ formset.as_p }}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+{% endblock content %}
+
+
+
+
